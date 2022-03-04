@@ -1,30 +1,44 @@
 <script>
-	export let name;
+  import RangeSlider from "svelte-range-slider-pips";
+  import Front from "./svg/Front.svelte";
+  import Sessions from './constants/front-sessions.js';
+  import { onMount } from 'svelte';
+
+  let bound = [1];
+  let parts = null;
+
+  $: if(bound) {
+    const sessions = Sessions.filter(el => el.step <= bound[0]);
+
+    parts = sessions.flatMap(el => el.parts);
+  }
+
+  $: if(parts) {
+    if(document.readyState === "complete") {
+      resetZones();
+      mapZones();
+    }
+  }
+
+  function mapZones () {
+      parts.forEach(el => {
+        document.getElementById(el.id).style.fill = el.color;
+        document.getElementById(el.id).style.stroke = el.color;
+      });
+  }
+
+  function resetZones () {
+    const classes = document.querySelectorAll('path');
+    classes.forEach(el => el.style = '#FFF');
+  }
+
+  onMount(async () => mapZones());
+
 </script>
+<div style="width:600px;margin: auto; display:block;">
+		<Front />
+<RangeSlider bind:values={bound} pips min={1} max={4}/>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<p style="text-align:center"> Tattoo sesh #{bound}</p>
+</div>
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
