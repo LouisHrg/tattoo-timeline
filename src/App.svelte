@@ -1,6 +1,7 @@
 <script>
   import Logo from "./svg/Logo.svelte";
   import Front from "./svg/Front.svelte";
+  import Caption from "./components/Caption.svelte";
   import Sessions from './constants/front-sessions.js';
 
   import { onMount } from 'svelte';
@@ -62,6 +63,7 @@
     <RangeSlider bind:values={bound} pips id="reverse-pips" min={1} max={4}/>
 
   <p style="text-align:center; color:#cdd1e4"> Tattoo sesh #{bound}</p>
+  <Caption />
 </div>
 
 <style>

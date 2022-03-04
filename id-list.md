@@ -25,6 +25,7 @@ arm-left-front
 wrist-left-front
 wrist-right-front
 arm-left-front
+arm-right-front
 biceps-left-front
 biceps-right-front
 pec-left-front
