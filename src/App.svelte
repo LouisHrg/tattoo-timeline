@@ -1,8 +1,9 @@
 <script>
   import Logo from "./svg/Logo.svelte";
   import Front from "./svg/Front.svelte";
+  import Back from "./svg/Back.svelte";
   import Caption from "./components/Caption.svelte";
-  import Sessions from './constants/front-sessions.js';
+  import Sessions from './constants/sessions.js';
 
   import { onMount } from 'svelte';
 
@@ -18,13 +19,18 @@
     "range-handle-inactive": "#a6aab9"
   };
 
-  let bound = [1];
+  let bound = [0];
+  let cumulative = false;
   let parts = null;
 
   $: if(bound) {
-    const sessions = Sessions.filter(el => el.step <= bound[0]);
-
-    parts = sessions.flatMap(el => el.parts);
+    if(cumulative) {
+      const sessions = Sessions.filter(el => el.step <= bound[0]);
+      parts = sessions.flatMap(el => el.parts);
+    } else {
+      const session = Sessions.find(el => el.step === bound[0]);
+      parts = session.parts;
+    }
   }
 
   $: if(parts) {
@@ -59,10 +65,26 @@
   <div class="row">
 		<h4> <Logo /> tttimeline </h4>
   </div>
-    <Front />
-    <RangeSlider bind:values={bound} pips id="reverse-pips" min={1} max={4}/>
-
-  <p style="text-align:center; color:#cdd1e4"> Tattoo sesh #{bound}</p>
+  <div class="row">
+    <div class="column" style="text-align: center;">
+      <Front />
+      <h5 style="margin-top:20px;">Front</h5>
+    </div>
+    <div class="column" style="text-align: center;">
+      <Back />
+      <h5 style="margin-top:20px">Back</h5>
+    </div>
+  </div>
+  <RangeSlider bind:values={bound} pips id="reverse-pips" min={0} max={4}/>
+  {#if bound > 0}
+  <p style="text-align:center; color:#cdd1e4"> Tattoo session #{bound}</p>
+  {:else}
+  <p style="text-align:center; color:#cdd1e4"> Slide to see the evolution </p>
+  {/if}
+  <label style="text-align: center;">
+    <input type=checkbox bind:checked={cumulative}>
+    Make the sessions overlap
+  </label>
   <Caption />
 </div>
 
