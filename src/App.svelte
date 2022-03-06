@@ -4,6 +4,7 @@
   import Back from "./svg/Back.svelte";
   import Caption from "./components/Caption.svelte";
   import Sessions from './constants/sessions.js';
+  import Loader from './components/Loader.svelte';
 
   import { onMount } from 'svelte';
 
@@ -22,6 +23,7 @@
   let bound = [0];
   let cumulative = false;
   let parts = null;
+  let logoLoaded = false;
 
   $: if(bound) {
     if(cumulative) {
@@ -52,15 +54,18 @@
     classes.forEach(el => el.style = '#FFF');
   }
 
-  onMount(async () => mapZones());
+  onMount(async () => {
+    mapZones();
+    setTimeout(() => logoLoaded = true, 4000)
+  });
 
 </script>
 
 <svelte:head>
-  <style> body { background: #22252a; } </style>
+  <style> body { background: #22252a; transition: all 500ms linear; } </style>
 </svelte:head>
 
-
+{#if logoLoaded }
 <div use:cssVars="{styleVars}" class="container">
   <div class="row">
 		<h4> <Logo /> tttimeline </h4>
@@ -86,12 +91,13 @@
     Make the sessions overlap
   </label>
   <Caption />
+
+  <p style="text-align:center; margin-top:30px; color:#FFF">
+    Tattoo by
+    <a href="https://www.instagram.com/maxwell_114/" target="blank">Maxwell - Black Is Beautiful</a>
+  </p>
+
 </div>
-
-<style>
-  .button-black {
-    background-color: black;
-    border-color: black;
-  }
-
-</style>
+{:else }
+  <Loader />
+{/if}
