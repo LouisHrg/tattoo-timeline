@@ -61,3 +61,195 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
+
+
+  svg .svg-elem-1 {
+    stroke-dashoffset: 17.6627254486084px;
+    stroke-dasharray: 17.6627254486084px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+  }
+
+  svg .svg-elem-2 {
+    stroke-dashoffset: 17.66269874572754px;
+    stroke-dasharray: 17.66269874572754px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+  }
+  svg .svg-elem-3 {
+    stroke-dashoffset: 26.488187789916992px;
+    stroke-dasharray: 26.488187789916992px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+  }
+
+  svg .svg-elem-4 {
+    stroke-dashoffset: 312.4105224609375px;
+    stroke-dasharray: 312.4105224609375px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+  }
+
+  svg .svg-elem-5 {
+    stroke-dashoffset: 312.41143798828125px;
+    stroke-dasharray: 312.41143798828125px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+  }
+
+  svg .svg-elem-6 {
+    stroke-dashoffset: 159.76779174804688px;
+    stroke-dasharray: 159.76779174804688px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+  }
+
+  svg .svg-elem-7 {
+    stroke-dashoffset: 13.168303489685059px;
+    stroke-dasharray: 13.168303489685059px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+  }
+
+
+  svg .svg-elem-8 {
+    stroke-dashoffset: 207.27359008789062px;
+    stroke-dasharray: 207.27359008789062px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+  }
+
+  svg .svg-elem-9 {
+    stroke-dashoffset: 16.531291007995605px;
+    stroke-dasharray: 16.531291007995605px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+  }
+
+  svg .svg-elem-10 {
+    stroke-dashoffset: 207.27359008789062px;
+    stroke-dasharray: 207.27359008789062px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+  }
+
+  svg .svg-elem-11 {
+    stroke-dashoffset: 16.531291007995605px;
+    stroke-dasharray: 16.531291007995605px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+  }
+
+  svg .svg-elem-12 {
+    stroke-dashoffset: 207.27359008789062px;
+    stroke-dasharray: 207.27359008789062px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+  }
+
+  svg .svg-elem-13 {
+    stroke-dashoffset: 16.531291007995605px;
+    stroke-dasharray: 16.531291007995605px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+  }
+
+  svg .svg-elem-14 {
+    stroke-dashoffset: 792.0499877929688px;
+    stroke-dasharray: 792.0499877929688px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
+  }
+
+  svg .svg-elem-15 {
+    stroke-dashoffset: 792.0519409179688px;
+    stroke-dasharray: 792.0519409179688px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s;
+  }
+
+  svg .svg-elem-16 {
+    stroke-dashoffset: 26.929441452026367px;
+    stroke-dasharray: 26.929441452026367px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s;
+  }
+  svg .svg-elem-17 {
+    stroke-dashoffset: 96.80187225341797px;
+    stroke-dasharray: 96.80187225341797px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4000000000000004s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4000000000000004s;
+  }
+
+  svg .svg-elem-18 {
+    stroke-dashoffset: 19.774425506591797px;
+    stroke-dasharray: 19.774425506591797px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.04s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.04s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s;
+  }
+
+  svg .svg-elem-19 {
+    stroke-dashoffset: 9.90218734741211px;
+    stroke-dasharray: 9.90218734741211px;
+    fill: transparent;
+    -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.16s,
+                          fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6s;
+            transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.16s,
+                  fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6s;
+
+
+
