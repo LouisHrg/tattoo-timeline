@@ -3,7 +3,7 @@
    viewBox="0 0 101 249"
    version="1.1"
    id="front"
-   style="display:block;width:230px;margin:0 auto"
+   style="display:block;height:60vh;margin:0 auto"
    sodipodi:docname="test.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">

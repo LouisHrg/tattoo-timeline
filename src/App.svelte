@@ -67,7 +67,7 @@
   <div class="top-right-corner"></div>
   <div class="bottom-left-corner"></div>
   <div class="bottom-right-corner"></div>
-  <p class="logo"></p>
+  <a href="https://github.com/louishrg/tattoo-timeline" target="blank" class="logo"></a>
 <div use:cssVars="{styleVars}" class="container">
   <div class="row">
     <div class="column" style="text-align: center;">

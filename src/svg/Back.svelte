@@ -1,6 +1,6 @@
 <svg
    viewBox="0 0 101 249"
-   style="display:block;width:230px;margin:0 auto"
+   style="display:block;height:60vh;margin:0 auto"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
 
