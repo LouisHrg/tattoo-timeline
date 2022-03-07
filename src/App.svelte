@@ -1,10 +1,8 @@
 <script>
-  import Logo from "./svg/Logo.svelte";
   import Front from "./svg/Front.svelte";
   import Back from "./svg/Back.svelte";
   import Caption from "./components/Caption.svelte";
   import Sessions from './constants/sessions.js';
-  import Loader from './components/Loader.svelte';
 
   import { onMount } from 'svelte';
 
@@ -23,7 +21,6 @@
   let bound = [0];
   let cumulative = false;
   let parts = null;
-  let logoLoaded = false;
 
   $: if(bound) {
     if(cumulative) {
@@ -65,11 +62,13 @@
   <style> body { background: #22252a; transition: all 500ms linear; } </style>
 </svelte:head>
 
-{#if logoLoaded }
+<div>
+  <div class="top-left-corner"></div>
+  <div class="top-right-corner"></div>
+  <div class="bottom-left-corner"></div>
+  <div class="bottom-right-corner"></div>
+  <p class="logo"></p>
 <div use:cssVars="{styleVars}" class="container">
-  <div class="row">
-		<h4> <Logo /> tttimeline </h4>
-  </div>
   <div class="row">
     <div class="column" style="text-align: center;">
       <Front />
@@ -86,18 +85,15 @@
   {:else}
   <p style="text-align:center; color:#cdd1e4"> Slide to see the evolution </p>
   {/if}
-  <label style="text-align: center;">
+  <label style="text-align: center">
     <input type=checkbox bind:checked={cumulative}>
     Make the sessions overlap
   </label>
-  <Caption />
 
-  <p style="text-align:center; margin-top:30px; color:#FFF">
+  <p style="text-align:center; position: fixed; bottom: 0; width: 100%;left: 0; right: 0;color:#FFF">
     Tattoo by
     <a href="https://www.instagram.com/maxwell_114/" target="blank">Maxwell - Black Is Beautiful</a>
   </p>
-
 </div>
-{:else }
-  <Loader />
-{/if}
+  <Caption />
+</div>
